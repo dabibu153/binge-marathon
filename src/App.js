@@ -10,7 +10,18 @@ function App() {
   return (
     <Router>
       <div className="grid-container">
-        <div className="mainNav">a</div>
+        <div className="mainNav">
+          <Link to="/movie">
+            <div className="mainHeadingMovieBox">
+              <h3 className="mainHeadingMovie">MOVIES</h3>
+            </div>
+          </Link>
+          <Link to="/tv">
+            <div className="mainHeadingTvBox">
+              <h3 className="mainHeadingTv">TV SHOWS</h3>
+            </div>
+          </Link>
+        </div>
         <main>
           <Switch>
             <Route path="/" exact component={Landing} />

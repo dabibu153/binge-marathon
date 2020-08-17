@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Good Times Rg";
+  src: local("Good Times Rg"), url(./fonts/good_times_rg.ttf) format("truetype");
+}
 body {
   font-family: cursive;
   margin: 0;
@@ -5,14 +9,24 @@ body {
 }
 
 .mainNav {
-  height: 30px;
+  height: 60px;
   width: 100%;
   background-color: #203040;
   color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
+}
+
+.mainHeadingMovie {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.mainHeadingTv {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .footer {
@@ -32,10 +46,41 @@ body {
 .movie-poster-top {
   filter: contrast(40%) blur(2px);
   position: relative;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .heading {
   position: absolute;
   top: 50px;
   left: 30px;
+  font-family: "Good Times Rg";
+  font-style: bold;
+  color: #ffffff;
+  font-size: 60px;
+}
+
+.about {
+  position: absolute;
+  top: 200px;
+  left: 30px;
+  font-family: "Good Times Rg";
+  color: #ffffff;
+}
+
+.release_date {
+  position: absolute;
+  bottom: 100px;
+  left: 30px;
+  font-family: "Good Times Rg";
+  color: #ffffff;
+}
+
+.score {
+  position: absolute;
+  bottom: 70px;
+  left: 30px;
+  font-family: "Good Times Rg";
+  color: #ffffff;
 }
